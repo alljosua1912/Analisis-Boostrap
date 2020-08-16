@@ -154,7 +154,7 @@
               <h6 class="collapse-header">Gestión:</h6>
               <!-- <a class="collapse-item" href="buttons.html">Clientes</a> -->
               <a class="collapse-item" href="registroEmpleado.html">Registrar Empleado</a>
-              <a class="collapse-item" >Planilla</a>
+              <a class="collapse-item" href="listaEmpleadosActivos.html" >Empleados Activos</a>
             </div>
           </div>
       </li>
@@ -171,47 +171,7 @@
         </div>
         
       </li>
-      <!-- Divider -->
-      <!-- <hr class="sidebar-divider"> -->
-
-      <!-- Heading -->
-      <!-- <div class="sidebar-heading">
-        Informes
-      </div> -->
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li> -->
-
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li> -->
-
-      <!-- Nav Item - Tables -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li> -->
-
+     
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -465,27 +425,29 @@
                               <option value="" selected disabled hidden>Estado Civil</option>
                               <option value="">Soltero(a)</option>
                               <option value="">Casado(a)</option>
-                              <option value="">Union Libre</option>
+                              <option value="">Unión Libre</option>
                               <option value="">Viudo(a)</option>
                             </select>
                           </div>             
                         </div>
         
-                      
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Lugar de Nacimiento">
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Nacimiento dd/mm/yy">
+                          </div>
+                        </div>
                         <div class="form-group row">
                           <div class="col-sm-6 mb-3 mb-sm-0">
                             <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                           </div>
                           <div class="col-sm-6">
-                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar Password">
                           </div>
                         </div>
-                        <div class="form-group row">
-                          <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Nacimiento dd/mm/yy">
-                          </div>
-                          
-                        </div>
+   
                         <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
                           <i class="fab fa-google fa-fw"></i> Register with Google
                         </a> -->
@@ -540,7 +502,13 @@
                           <div class="col-sm-6">
                             <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Inicio dd/mm/yy">
                           </div>
-                          
+                          <div class="col-sm-6">
+                            <!-- <div class="form-check form-check-inline"> -->
+                               <div class="form-check form-check-inline" style="border-radius: 10rem;font-size: 0.85rem;height: 3rem;">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                              <label class="form-check-label" for="inlineCheckbox1">Activo</label>
+                            </div>
+                          </div>
                         </div>
                         <hr>
                         <div class="form-group row">
