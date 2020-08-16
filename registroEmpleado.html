@@ -25,8 +25,8 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+     <!-- Sidebar -->
+     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -415,309 +415,155 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Bienvenida Lara Croft - Departamento de Ventas</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Descargar Reporte</a>
-          </div>
+          <div class="container">
+      
 
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ventas de Lara Croft (Mensuales)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+            <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <img src="../img/jk2.jpg"></img>
+                    <br>
+                     <br>
+                    <div class="col-sm-8">
+                      <a href="login.html" class="btn btn-primary btn-user btn-block">
+                       Actualizar Foto
+                      </a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Comisiones (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Propuestas de Venta</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                  <div class="col-lg-8">
+                    <div class="p-4">
+                      <div class="text-center">
+                      
+                      <h1 class="h4 text-gray-900 mb-4">Registrar Empleado</h1>
+                      
+                      </div>
+                      <form class="user">
+                        <div class="form-group row">
+                          <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombres">
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellidos">
+                          </div>
+                
                         </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Dirección">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Teléfono">
+                          </div>
+            
+                          <div class="col-sm-6">
+                            <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                              <option value="" selected disabled hidden>Estado Civil</option>
+                              <option value="">Soltero(a)</option>
+                              <option value="">Casado(a)</option>
+                              <option value="">Union Libre</option>
+                              <option value="">Viudo(a)</option>
+                            </select>
+                          </div>             
+                        </div>
+        
+                      
+                        <div class="form-group row">
+                          <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
                           </div>
                         </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Nacimiento dd/mm/yy">
+                          </div>
+                          
+                        </div>
+                        <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
+                          <i class="fab fa-google fa-fw"></i> Register with Google
+                        </a> -->
+                        <!-- <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                          <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                        </a> -->
+                      </form>
+                     
+                      <!-- <div class="text-center">
+                        <a class="small" href="forgot-password.html">Forgot Password?</a>
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                      <div class="text-center">
+                        <a class="small" href="login.html">Already have an account? Login!</a>
+                      </div> -->
                     </div>
                   </div>
+                </div>
+             
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="p-4">
+                      <form class="user">
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Profesión">
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Salario">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                              <option value="" selected disabled hidden>Departamento</option>
+                              <option value="">Departamento 1</option>
+                              <option value="">Departamento 2</option>
+                              <option value="">Departamento 3</option>
+         
+                            </select>
+                          </div>   
+                          <div class="col-sm-6">
+                            <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                              <option value="" selected disabled hidden>Puesto</option>
+                              <option value="">Puesto 1</option>
+                              <option value="">Puesto 2</option>
+                              <option value="">Puesto 3</option>
+                            </select>
+                          </div>  
+                           
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Inicio dd/mm/yy">
+                          </div>
+                          
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                          <a href="login.html" class="btn btn-primary btn-user btn-block">
+                            Registrar Empleado
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="login.html" class="btn btn-primary btn-user btn-block">
+                            Modificar Empleado
+                          </a>
+                        </div>
+                        </div>
+                     
+        
+                      </form>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
-
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Ventas Pendientes de Respuesta</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Ventas</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Filtros:</div>
-                      <a class="dropdown-item" href="#">Diarias</a>
-                      <a class="dropdown-item" href="#"> Mensuales</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Anuales</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Ventas</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Filtros:</div>
-                      <a class="dropdown-item" href="#">Diarias</a>
-                      <a class="dropdown-item" href="#">Mensuales</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Anuales</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Confirmadas
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Pendientes Respuesta
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Propuestas
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Registro de Ventas - Lara Croft</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Cliente</th>
-                      <th>Teléfono</th>
-                      <th>Ciudad</th>
-                      <th>No Factura</th>
-                      <th>Fecha Factura</th>
-                      <th>MontoFactura</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Cliente</th>
-                      <th>Teléfono</th>
-                      <th>Ciudad</th>
-                      <th>No Factura</th>
-                      <th>Fecha Factura</th>
-                      <th>MontoFactura</th>
-                    </tr>
-                  </tfoot>
-                <tbody>
-                  <tr>
-                    <td>Tiger Nixon</td>
-                    <td>94xx-xxxx</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                  </tr>
-                  <tr>
-                    <td>Garrett Winters</td>
-                    <td>94xx-xxxx</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011/07/25</td>
-                    <td>$170,750</td>
-                  </tr>
-                  <tr>
-                    <td>Ashton Cox</td>
-                    <td>94xx-xxxx</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009/01/12</td>
-                    <td>$86,000</td>
-                  </tr>
-                  <tr>
-                    <td>Cedric Kelly</td>
-                    <td>94xx-xxxx</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012/03/29</td>
-                    <td>$433,060</td>
-                  </tr>
-                  <tr>
-                    <td>Airi Satou</td>
-                    <td>94xx-xxxx</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008/11/28</td>
-                    <td>$162,700</td>
-                  </tr>
-                  <tr>
-                    <td>Brielle Williamson</td>
-                    <td>94xx-xxxx</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2012/12/02</td>
-                    <td>$372,000</td>
-                  </tr>
-                  <tr>
-                    <td>Herrod Chandler</td>
-                    <td>94xx-xxxx</td>
-                    <td>San Francisco</td>
-                    <td>59</td>
-                    <td>2012/08/06</td>
-                    <td>$137,500</td>
-                  </tr>
-                  <tr>
-                    <td>Rhona Davidson</td>
-                    <td>94xx-xxxx</td>
-                    <td>Tokyo</td>
-                    <td>55</td>
-                    <td>2010/10/14</td>
-                    <td>$327,900</td>
-                  </tr>
-                  <tr>
-                    <td>Colleen Hurst</td>
-                    <td>94xx-xxxx</td>
-                    <td>San Francisco</td>
-                    <td>39</td>
-                    <td>2009/09/15</td>
-                    <td>$205,500</td>
-                  </tr>
-                  <tr>
-                    <td>Tiger Nixon</td>
-                    <td>94xx-xxxx</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                  </tr>
-                  <tr>
-                    <td>Garrett Winters</td>
-                    <td>94xx-xxxx</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011/07/25</td>
-                    <td>$170,750</td>
-                  </tr>
-                  <tr>
-                    <td>Ashton Cox</td>
-                    <td>94xx-xxxx</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009/01/12</td>
-                    <td>$86,000</td>
-                  </tr>
-                  <tr>
-                    <td>Cedric Kelly</td>
-                    <td>94xx-xxxx</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012/03/29</td>
-                    <td>$433,060</td>
-                  </tr>
-                  <tr>
-                    <td>Airi Satou</td>
-                    <td>94xx-xxxx</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008/11/28</td>
-                    <td>$162,700</td>
-                  </tr>
-                </tbody>
-                </table>
-              </div>
-            </div>
+        
           </div>
 
         </div>
