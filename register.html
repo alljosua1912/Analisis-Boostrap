@@ -20,73 +20,152 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-dark">
 
+ 
   <div class="container">
+      
 
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
         <!-- Nested Row within Card Body -->
         <div class="row">
           <div class="col-lg-4 d-none d-lg-block">
-            <img src="../img/suga2.jpg"></img>
+            <img src="../img/jk2.jpg"></img>
             <br>
              <br>
             <div class="col-sm-8">
-              <a href="login.html" class="btn btn-primary btn-user btn-block">
+              <a href="login.html" class="btn btn-primary btn-user btn-block"style="background-color: black;">
                Actualizar Foto
               </a>
             </div>
           </div>
           <div class="col-lg-8">
-            <div class="p-5">
+            <div class="p-4">
               <div class="text-center">
-              <h1 class="h4 text-gray-900 mb-4">Registro de Distribuidores!</h1>
+              
+              <h1 class="h4 text-gray-900 mb-4">Registrar Empleado</h1>
+              
               </div>
               <form class="user">
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombre">
+                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombres">
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellido">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellidos">
                   </div>
+        
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Dirección">
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
                 </div>
-                <div class="form-group">
-                  <input type="ciudad" class="form-control form-control-user" id="exampleInputEmail" placeholder="Ciudad">
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Teléfono">
+                  </div>
+    
+                  <div class="col-sm-6">
+                    <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                      <option value="" selected disabled hidden>Estado Civil</option>
+                      <option value="">Soltero(a)</option>
+                      <option value="">Casado(a)</option>
+                      <option value="">Unión Libre</option>
+                      <option value="">Viudo(a)</option>
+                    </select>
+                  </div>             
                 </div>
-                <div class="form-group">
-                  <input type="telefono" class="form-control form-control-user" id="exampleInputEmail" placeholder="Telefono">
-                </div>
-                <div class="form-group">
-                  <input type="empresa" class="form-control form-control-user" id="exampleInputEmail" placeholder="Empresa">
+
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Lugar de Nacimiento">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Nacimiento dd/mm/yy">
+                  </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar Password">
                   </div>
                 </div>
-                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                  Register Account
-                </a>
-                <hr>
-               
+
+                
               </form>
-              <hr>
-              <div class="text-center">
-                <a class="small" href="forgot-password.html">Forgot Password?</a>
-              </div>
-              <div class="text-center">
-                <a class="small" href="login.html">Already have an account? Login!</a>
-              </div>
+             
+            
             </div>
           </div>
+        </div>
+     
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-4">
+              <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Profesión">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Salario">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                      <option value="" selected disabled hidden>Departamento</option>
+                      <option value="">Departamento 1</option>
+                      <option value="">Departamento 2</option>
+                      <option value="">Departamento 3</option>
+ 
+                    </select>
+                  </div>   
+                  <div class="col-sm-6">
+                    <select class="form-control" style="border-radius: 10rem;font-size: 0.8rem;height: 3rem;">
+                      <option value="" selected disabled hidden>Puesto</option>
+                      <option value="">Puesto 1</option>
+                      <option value="">Puesto 2</option>
+                      <option value="">Puesto 3</option>
+                    </select>
+                  </div>  
+                   
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Fecha de Inicio dd/mm/yy">
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <div class="form-check form-check-inline"> -->
+                       <div class="form-check form-check-inline" style="border-radius: 10rem;font-size: 0.85rem;height: 3rem;">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Activo</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                  <a href="login.html" class="btn btn-primary btn-user btn-block"style="background-color: black;">
+                    Registrar Empleado
+                  </a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="login.html" class="btn btn-primary btn-user btn-block"style="background-color: black;">
+                    Modificar Empleado
+                  </a>
+                </div>
+                </div>
+             
+
+              </form>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
