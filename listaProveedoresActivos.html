@@ -131,7 +131,8 @@
               <h6 class="collapse-header">Gestión:</h6>
               <!-- <a class="collapse-item" href="buttons.html">Clientes</a> -->
               <a class="collapse-item" href="registroProveedor.html">Registrar Proveedor</a>
-              <a class="collapse-item" href="listaProveedoresActivos.html">Proveedores Activoss</a>
+              <a class="collapse-item" href="listaProveedoresActivos.html">Proveedores Activos</a>
+              <a class="collapse-item" href="Productos.html">Existencia de Productos</a>
             </div>
           </div>
       </li>
@@ -573,7 +574,165 @@
 
   </div>
   <!-- End of Page Wrapper -->
+///
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
 
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Productos</h1>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+      <img src="../img/logoGoshen.png" style="width: 80%;" alt="">
+    </a>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="background-color: black;"><i class="fas fa-download fa-sm text-white-50"></i> Descargar Reporte</a>
+  </div>
+  <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>ID_PRODUCTO</th>
+              <th>DESCRIPCION</th>
+              <th>PROVEEDOR</th>
+              <th>EXISTENCIA</th>
+              <th>TIPO_PRODUCTO</th>
+              <th>OBSERVACIONES</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>ID_PRODUCTO</th>
+              <th>DESCRIPCION</th>
+              <th>PROVEEDOR</th>
+              <th>EXISTENCIA</th>
+              <th>TIPO_PRODUCTO</th>
+              <th>OBSERVACIONES</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>20201</td>
+              <td>Microondas</td>
+              <td>LG Electronics</td>
+              <td>100</td>
+              <td>Electrodomesticos</td>
+              <td>Color Blanco</td>
+            </tr>
+            <tr>
+              <td>20202</td>
+              <td>Televisor 32 plg.</td>
+              <td>SAMSUNG</td>
+              <td>35</td>
+              <td>Electrodomesticos</td>
+              <td>FULL HD</td>
+            </tr>
+            <tr>
+              <td>20203</td>
+              <td>Tablet Kindle Amazon</td>
+              <td>Amazon</td>
+              <td>25</td>
+              <td>Tecnologia</td>
+              <td>7 pulgadas</td>
+            </tr>
+            <tr>
+              <td>20204</td>
+              <td>MicrMinicomponente</td>
+              <td>LG Electronics</td>
+              <td>50</td>
+              <td>Tecnologia</td>
+              <td>7000 WATSS</td>
+            </tr>
+            <tr>
+              <td>20205</td>
+              <td>Echo Dot</td>
+              <td>Amazon</td>
+              <td>20</td>
+              <td>Tecnologia</td>
+              <td>4 Generacion</td>
+            </tr>
+            <tr>
+              <td>20206</td>
+              <td>Laptop</td>
+              <td>Hewlert Packagge</td>
+              <td>80</td>
+              <td>Tecnologia</td>
+              <td>16 plg.</td>
+            </tr>
+            <!-- <tr>
+              <td>Herrod Chandler</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>San Francisco</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+            <!-- <tr>
+              <td>Rhona Davidson</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>Tokyo</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr>
+            <tr>
+              <td>Colleen Hurst</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>San Francisco</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+            <!-- <tr>
+              <td>Sonya Frost</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>Edinburgh</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr>
+            <tr>
+              <td>Jena Gaines</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>London</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+  <div class="copyright text-center my-auto">
+    <span>Copyright &copy; Your Website 2020</span>
+  </div>
+</div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+///
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
