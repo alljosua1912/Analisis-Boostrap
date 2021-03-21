@@ -9,14 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>GOSHEN</title>
+  <title>SB Admin 2 - Tables</title>
 
-  <!-- Custom fonts for this template-->
+  <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
+  <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -40,7 +43,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
+
           <span>Tablero Personal</span></a>
+
       </li>
 
       <!-- Divider -->
@@ -126,7 +131,7 @@
               <h6 class="collapse-header">Gestión:</h6>
               <!-- <a class="collapse-item" href="buttons.html">Clientes</a> -->
               <a class="collapse-item" href="registroProveedor.html">Registrar Proveedor</a>
-              <a class="collapse-item" href="listaProveedoresActivos.html">Proveedores Activoss</a>
+              <a class="collapse-item" href="listaProveedoresActivos.html">Proveedores Activos</a>
               <a class="collapse-item" href="Productos.html">Existencia de Productos</a>
             </div>
           </div>
@@ -231,16 +236,18 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
+          <form class="form-inline">
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+          </form>
 
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary" style="background-color: black;" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
@@ -380,7 +387,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User Name</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -411,342 +418,196 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
 
-          <!-- Page Heading -->
-                    <!-- Content Row Encabezado-->
-          <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-4">
-
-          
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-              <img src="../img/logoGoshen.png" style="width: 120%;" alt="">
-            </a>
-            <h1 class="h3 mb-0 text-gray-800">Factura No 999999</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="background-color: black;"><i class="fas fa-download fa-sm text-white-50"></i> Imprimir Factura</a>
-          </div>
-          <div class="row">
-            <div class="col-lg-2">
-            <label for="">Dirección de la Empresa</label>
-            <label for="">Teléfono de la Empresa</label>
-            <label for="">RTN de la Empresa</label>
-          
-          </div>
-          </div>
-          <br>
-          <div class="row">
-            
-            <div class="col-lg-6">
-            <form>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Cliente</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="C001 - Jeon Jungkook" readonly>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Dirección</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="New Yor City..." readonly>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Teléfono</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="(+504) 94xx-xxxx" readonly>
-                </div>
-              </div>
-
-            </form>
-            </div>
-            <div class="col-lg-6">
-            <form>
-                              
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-3 col-form-label">Fecha</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="dd/mm/yy" readonly>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-3 col-form-label">Método de Pago</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Pago en Línea" readonly>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-3 col-form-label">Términos de Pago</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Contado" readonly>
-                </div>
-              </div>
-
-            </form>
-          </div>
-          </div>
-
-        </div>  
-      </div>
-
-
-     
-          <!-- Content Row -->
-
-      
-
-          <div class="card shadow mb-4">
-            <div class="card-header py-2">
-              <h6 class="m-0 font-weight-bold text-primary">Detalle</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código</th>
-                      <th>Descripción</th>
-                      <th>UM</th>
-                      <th>Cantidad</th>
-                      <th>Precio</th>
-                      <th>Desc</th>
-                      <th>E/G</th>
-                      <th>ISV</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Código</th>
-                      <th>Descripción</th>
-                      <th>UM</th>
-                      <th>Cantidad</th>
-                      <th>Precio</th>
-                      <th>Desc</th>
-                      <th>E/G</th>
-                      <th>ISV</th>
-                      <th>Total</th>
-                    </tr>
-                  </tfoot>
-                <tbody>
-                  <tr>
-                    <td>P001</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P002</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P003</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <!-- <tr>
-                    <td>P004</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P005</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P006</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P007</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P008</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P009</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P010</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P011</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P012</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P013</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr>
-                  <tr>
-                    <td>P014</td>
-                    <td>Tv Samsung 48 pulg</td>
-                    <td>Unid</td>
-                    <td>1</td>
-                    <td>$320,80</td>
-                    <td>$0,00</td>
-                    <td>E</td>
-                    <td>0,00</td>
-                    <td>$320,80</td>
-                  </tr> -->
-                </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="card o-hidden border-0 shadow-lg my-5 ">
-            <div class="card-body p-4 align-items-center">
-              <div class="col-lg-6">
-
-              </div>
-              <div class="col-lg-5 ">
-                <form>
-                  <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-3 col-form-label">+ Subtotal</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputPassword" placeholder="00,00" readonly>
-                    </div>
-                  </div>        
-                  <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-3 col-form-label">- Descuento</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputPassword" placeholder="00,00" readonly>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-3 col-form-label">+ Impuesto</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputPassword" placeholder="00,00" readonly>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-3 col-form-label">Total Factura</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputPassword" placeholder="00,00" readonly>
-                    </div>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-        </div>
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
-
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Productos</h1>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+      <img src="../img/logoGoshen.png" style="width: 80%;" alt="">
+    </a>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="background-color: black;"><i class="fas fa-download fa-sm text-white-50"></i> Descargar Reporte</a>
   </div>
-  <!-- End of Page Wrapper -->
+  <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
 
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>ID_PRODUCTO</th>
+              <th>DESCRIPCION</th>
+              <th>PROVEEDOR</th>
+              <th>EXISTENCIA</th>
+              <th>TIPO_PRODUCTO</th>
+              <th>OBSERVACIONES</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>ID_PRODUCTO</th>
+              <th>DESCRIPCION</th>
+              <th>PROVEEDOR</th>
+              <th>EXISTENCIA</th>
+              <th>TIPO_PRODUCTO</th>
+              <th>OBSERVACIONES</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>20201</td>
+              <td>Microondas</td>
+              <td>LG Electronics</td>
+              <td>100</td>
+              <td>Electrodomesticos</td>
+              <td>Color Blanco</td>
+            </tr>
+            <tr>
+              <td>20202</td>
+              <td>Televisor 32 plg.</td>
+              <td>SAMSUNG</td>
+              <td>35</td>
+              <td>Electrodomesticos</td>
+              <td>FULL HD</td>
+            </tr>
+            <tr>
+              <td>20203</td>
+              <td>Tablet Kindle Amazon</td>
+              <td>Amazon</td>
+              <td>25</td>
+              <td>Tecnologia</td>
+              <td>7 pulgadas</td>
+            </tr>
+            <tr>
+              <td>20204</td>
+              <td>MicrMinicomponente</td>
+              <td>LG Electronics</td>
+              <td>50</td>
+              <td>Tecnologia</td>
+              <td>7000 WATSS</td>
+            </tr>
+            <tr>
+              <td>20205</td>
+              <td>Echo Dot</td>
+              <td>Amazon</td>
+              <td>20</td>
+              <td>Tecnologia</td>
+              <td>4 Generacion</td>
+            </tr>
+            <tr>
+              <td>20206</td>
+              <td>Laptop</td>
+              <td>Hewlert Packagge</td>
+              <td>80</td>
+              <td>Tecnologia</td>
+              <td>16 plg.</td>
+            </tr>
+            <tr>
+                <td>20207</td>
+                <td>Smartwatch</td>
+                <td>Apple</td>
+                <td>10</td>
+                <td>Tecnologia</td>
+                <td>Series 3</td>
+              </tr>
+              <tr>
+                <td>20208</td>
+                <td>Refrigeradora</td>
+                <td>Cetron</td>
+                <td>10 pies</td>
+                <td>Linea Blanca</td>
+                <td>Inverter th</td>
+              </tr>
+              <tr>
+                <td>20209</td>
+                <td>Cama King</td>
+                <td>Olympia</td>
+                <td>50</td>
+                <td>Linea Blanca</td>
+                <td>Model. 677</td>
+              </tr>
+              <tr>
+                <td>20210</td>
+                <td>Impresora</td>
+                <td>Epson</td>
+                <td>5</td>
+                <td>Tecnologia</td>
+                <td>Multifuncional</td>
+              </tr>
+            <!-- <tr>
+              <td>Herrod Chandler</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>San Francisco</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+            <!-- <tr>
+              <td>Rhona Davidson</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>Tokyo</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr>
+            <tr>
+              <td>Colleen Hurst</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>San Francisco</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+            <!-- <tr>
+              <td>Sonya Frost</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>Edinburgh</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr>
+            <tr>
+              <td>Jena Gaines</td>
+              <td><img src="../img/LogoProveedorSmall/samsung.png"></img></td>
+              <td>London</td>
+              <td>correo@dominio.com</td>
+              <td>94xx-xxxx</td>
+              <td>90xx-xxxx</td>
+            </tr> -->
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+  <div class="copyright text-center my-auto">
+    <span>Copyright &copy; Your Website 2020</span>
+  </div>
+</div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+///
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
@@ -782,18 +643,11 @@
   <script src="js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-  
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
